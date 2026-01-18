@@ -1,0 +1,150 @@
+/*
+En esta primera seccion de código estamos aplicando un reset a los estilos de la landing page, 
+además de tambien aplicarle una imágen al fondo de la parte superior de nuestra página
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-login-register {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    position: relative;
+  min-height: 100vh;
+
+  background:
+    /* Oscuro arriba (navbar y textos) */
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.75) 35%,
+      rgba(0, 0, 0, 0.4) 65%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+
+    /* Oscuro lateral izquierdo (logo + texto) */
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.85) 0%,
+      rgba(0, 0, 0, 0.6) 30%,
+      rgba(0, 0, 0, 0.25) 60%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+
+    /* Imagen */
+    url('./assets/img/hero-bg.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.hero-nav-principal{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hero-cont-logo{
+    position: relative;
+    left: 4%;
+}
+
+.netflix-logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: #E50914; /* Rojo Netflix */
+  text-transform: uppercase;
+  
+}
+
+.hero-cont-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    right: 4%;
+    margin: 10px;
+}
+
+#languageSelector{
+    color: white;
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 4px;
+    width:129px;
+    height: 33px;
+}
+
+.hero-sign-in{
+    background-color: #E50914;
+    color:white;
+    border-radius:4px;
+    width:129px;
+    height:33px;
+}
+
+
+.hero-form{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top:60px;
+}
+
+.section-register{
+    width:450px;
+    height: 400px;
+    text-align: center;
+}
+
+.casilla-2{
+   margin-top: 20px;
+   position:relative; 
+}
+
+.register-txt{
+    font-weight: 400;
+}
+
+.mini-form{
+   margin-top: 20px;
+   position:relative;
+   display:flex; 
+   flex-wrap:wrap;
+   gap:5px;
+   left: 20px;
+}
+
+input{
+    color:white;
+    background-color:black;
+    border-color: rgb(11, 54, 11);
+    border-radius:5px;
+    width:300px;
+    height:45px;
+    
+}
+
+.comenzar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    color:white;
+    background-color: #E50914;
+    width:140px;
+    border-radius: 5px;
+    font-size:15px;
+    
+}
