@@ -12,5 +12,5 @@ form.addEventListener("submit", (e) => {
 
     localStorage.setItem("userEmail", email);
 
-    window.location.replace("index.html");
+    window.location.replace("perfil.html");
 });
